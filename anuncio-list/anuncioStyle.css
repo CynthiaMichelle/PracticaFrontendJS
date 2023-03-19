@@ -1,0 +1,39 @@
+.anuncio {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .anuncio .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .anuncio img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .anuncio a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .user-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align:right;
+    
+  }
+
+  .titulo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .titulo h1 {
+    display: inline;
+  }
