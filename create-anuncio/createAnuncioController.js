@@ -1,18 +1,16 @@
-import { createAnuncio } from "./createAnuncio.js"
+import { createAnuncio } from "./createAnuncio.js";
 
 export const createAnuncioController = (createAnuncioFormElement) => {
-    createAnuncioFormElement.addEventListener('submit', async(event) => {
-        event.preventDefault()
+  createAnuncioFormElement.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-        const anuncioData = new FormData(createAnuncioFormElement)
+    const anuncioData = new FormData(createAnuncioFormElement);
 
-        try {
-            await createAnuncio(anuncioData)
-            window.location = '/'
-
-        } catch (error) {
-            alert(error)
-        }
-
-    })
-}
+    try {
+      await createAnuncio(anuncioData);
+      window.location = "/";
+    } catch (error) {
+      alert(error);
+    }
+  });
+};

@@ -1,10 +1,10 @@
-    .anuncio-detail .user-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .anuncio-detail img {
-    width: 200px;
-    height: 200px;
-  }
+.anuncio-detail .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.anuncio-detail img {
+  width: 200px;
+  height: 200px;
+}

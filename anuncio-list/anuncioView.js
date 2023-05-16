@@ -4,9 +4,9 @@
 // appendChild -> Lo empuja al DOM (Documento HTML)
 
 export function buildAnuncioView(anuncio) {
-  const newAnuncioElement = document.createElement('article');
-  newAnuncioElement.classList.add('anuncio')
-/// poner en href link a pagina html crear anuncio
+  const newAnuncioElement = document.createElement("article");
+  newAnuncioElement.classList.add("anuncio");
+  /// poner en href link a pagina html crear anuncio
   newAnuncioElement.innerHTML = `
   <a href="/anuncio-detail.html?anuncioId=${anuncio.id}">
     <h3>${anuncio.nombre}</h3>
@@ -14,19 +14,18 @@ export function buildAnuncioView(anuncio) {
     <p>${anuncio.descripcion}</p>
     <p>${anuncio.precio} - ${anuncio.tipoAnuncio}</p> 
   </a>
-    `; 
+    `;
   return newAnuncioElement;
-  }
-  
+}
+
 export function buildSpinnerView() {
-  return `<div class="spinner"><div></div><div></div><div></div></div>`
+  return `<div class="spinner"><div></div><div></div><div></div></div>`;
 }
 
 export function buildErrorLoadingAnuncios() {
-  return '<p class="load-error ">Ha habido un problema cargando los anuncios. Intentalo de nuevo mas tarde</p>'
-
+  return '<p class="load-error ">Ha habido un problema cargando los anuncios. Intentalo de nuevo mas tarde</p>';
 }
 
 export function buildEmptyAnuncioList() {
-  return '<p> No hay resultados disponibles</p>'
+  return "<p> No hay resultados disponibles</p>";
 }

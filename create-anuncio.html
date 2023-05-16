@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Anuncio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Creacion de anuncio</h1>
 
     <form id="createAnuncioForm">
-<div>
-    <label for="nombre"></label>
-    <input  name="nombre" id="nombre" placeholder="Nombre" required>
-</div>
+      <div>
+        <label for="nombre"></label>
+        <input name="nombre" id="nombre" placeholder="Nombre" required />
+      </div>
 
-<div>
-    <label for="imagen"></label>
-    <input name="imagen" id="imagen" placeholder="Imagen">
-</div>
+      <div>
+        <label for="imagen"></label>
+        <input name="imagen" id="imagen" placeholder="Imagen" />
+      </div>
 
-<div>
-    <label for="precio"></label>
-    <input  name="precio" id="precio" placeholder="Precio del producto (€)" required>
-</div>
+      <div>
+        <label for="precio"></label>
+        <input
+          name="precio"
+          id="precio"
+          placeholder="Precio del producto (€)"
+          required
+        />
+      </div>
 
-<div>
-    <label for="tipoAnuncio"></label>
-    <input  name="tipoAnuncio" id="tipoAnuncio" 
-    placeholder="Compra/Venta"required>
-</div>
-<div>
-    <label for="descripcion"></label>
-    <textarea name="descripcion" id="descripcion" placeholder="Descripción del anuncio" cols="30" rows="10" required></textarea>
-</div>
+      <div>
+        <label for="tipoAnuncio"></label>
+        <select name="tipoAnuncio" id="tipoAnuncio" required>
+          <option value="Compra">Compra</option>
+          <option value="Venta">Venta</option>
+        </select>
+      </div>
+      <div>
+        <label for="descripcion"></label>
+        <textarea
+          name="descripcion"
+          id="descripcion"
+          placeholder="Descripción del anuncio"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+      </div>
 
-        <button type="submit">Crear anuncio</button>
-
+      <button type="submit">Crear anuncio</button>
     </form>
 
     <script type="module" src="./create-anuncio/index.js"></script>
-</body>
-
+  </body>
 </html>

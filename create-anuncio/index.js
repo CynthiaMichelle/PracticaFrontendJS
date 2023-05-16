@@ -1,10 +1,10 @@
-import { createAnuncioController } from "./createAnuncioController.js"
+import { createAnuncioController } from "./createAnuncioController.js";
 
-const token = localStorage.getItem('token')
+const token = localStorage.getItem("token");
 
 if (!token) {
-    window.location = '/'
+  window.location = "/";
 } else {
-    const createAnuncioFormElement = document.querySelector('#createAnuncioForm')
-    createAnuncioController(createAnuncioFormElement)
+  const createAnuncioFormElement = document.querySelector("#createAnuncioForm");
+  createAnuncioController(createAnuncioFormElement);
 }

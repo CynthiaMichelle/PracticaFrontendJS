@@ -1,12 +1,12 @@
 export const decodedToken = (token) => {
-    let decodedToken;
+  let decodedToken;
 
-    try {
-        const stringifiedToken = atob(token.split('.')[1])
-        decodedToken = JSON.parse(stringifiedToken)
-    } catch (error) {
-        return null
-    }
+  try {
+    const stringifiedToken = atob(token.split(".")[1]);
+    decodedToken = JSON.parse(stringifiedToken);
+  } catch (error) {
+    return null;
+  }
 
-    return decodedToken
-}
+  return decodedToken;
+};
